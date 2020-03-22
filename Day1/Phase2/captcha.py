@@ -11,6 +11,9 @@ nseq = []
 for i in f_in.split(' '):
     nseq.append(int(i))
 
+nseq.sort()
+nseq = list(dict.fromkeys(nseq))
+
 mcnt = 0
 scnt = 0
 
